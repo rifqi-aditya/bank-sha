@@ -33,7 +33,7 @@ class HomeUserItem extends StatelessWidget {
             ),
           ),
           Text(
-            "@${userName}",
+            "@$userName",
             style: blackTextStyle.copyWith(fontSize: 12, fontWeight: medium),
           )
         ],
