@@ -1,6 +1,7 @@
 import 'package:bank_sha/shared/theme.dart';
 import 'package:bank_sha/ui/widgets/home_latest_transaction_item.dart';
 import 'package:bank_sha/ui/widgets/home_services_item.dart';
+import 'package:bank_sha/ui/widgets/home_user_item.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -82,6 +83,7 @@ class HomePage extends StatelessWidget {
           buildLevel(),
           buildServices(),
           buildLatestTransactions(),
+          buildSendAgain(),
         ],
       ),
     );
@@ -89,7 +91,7 @@ class HomePage extends StatelessWidget {
 
   Widget buildProfile() {
     return Container(
-      margin: EdgeInsets.only(top: 40),
+      margin: const EdgeInsets.only(top: 40),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -100,7 +102,7 @@ class HomePage extends StatelessWidget {
                 "Howdy,",
                 style: greyTextStyle.copyWith(fontSize: 16),
               ),
-              SizedBox(height: 2),
+              const SizedBox(height: 2),
               Text(
                 "Praboworifqi",
                 style: blackTextStyle.copyWith(
@@ -313,6 +315,45 @@ class HomePage extends StatelessWidget {
               ],
             ),
           )
+        ],
+      ),
+    );
+  }
+
+  Widget buildSendAgain() {
+    return Container(
+      margin: const EdgeInsets.only(top: 30),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Latest Transactions",
+            style: blackTextStyle.copyWith(fontSize: 16, fontWeight: semiBold),
+          ),
+          const SizedBox(height: 14),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: const [
+                HomeUserItem(
+                  imageUrl: "assets/img_friend1.png",
+                  userName: "yuanita",
+                ),
+                HomeUserItem(
+                  imageUrl: "assets/img_friend2.png",
+                  userName: "jani",
+                ),
+                HomeUserItem(
+                  imageUrl: "assets/img_friend3.png",
+                  userName: "urip",
+                ),
+                HomeUserItem(
+                  imageUrl: "assets/img_friend4.png",
+                  userName: "masa",
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

@@ -17,7 +17,7 @@ class HomeLatestTransactionItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(bottom: 18),
+      margin: const EdgeInsets.only(bottom: 18),
       child: Row(
         children: [
           Image.asset(

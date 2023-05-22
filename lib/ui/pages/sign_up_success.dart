@@ -21,13 +21,13 @@ class SignUpSuccessPage extends StatelessWidget {
                   blackTextStyle.copyWith(fontSize: 20, fontWeight: semiBold),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 26),
+            const SizedBox(height: 26),
             Text(
               "Grow your finance start\ntogether with us",
               style: greyTextStyle.copyWith(fontSize: 16),
               textAlign: TextAlign.center,
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             CustomFilledButton(
               width: 183,
               title: "Get Started",
