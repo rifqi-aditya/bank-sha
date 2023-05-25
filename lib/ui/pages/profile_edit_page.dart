@@ -5,30 +5,19 @@ import 'package:bank_sha/ui/widgets/forms.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class SignUpPage extends StatelessWidget {
-  const SignUpPage({super.key});
+class ProfileEditPage extends StatelessWidget {
+  const ProfileEditPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Edit Profile"),
+      ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24),
         children: [
-          Container(
-            height: 50,
-            width: 155,
-            margin: const EdgeInsets.only(top: 100, bottom: 100),
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('assets/img_logo_light.png'),
-              ),
-            ),
-          ),
-          Text(
-            "Join Us to Unlock\nYour Growth",
-            style: blackTextStyle.copyWith(fontSize: 20, fontWeight: semiBold),
-          ),
-          const SizedBox(height: 30),
+          const SizedBox(height: 40),
           Container(
             padding: const EdgeInsets.all(22),
             decoration: BoxDecoration(
@@ -41,16 +30,21 @@ class SignUpPage extends StatelessWidget {
                 // NOTE : FULL NAME INPUT
                 const CustomFormField(
                   keyboardType: TextInputType.name,
-                  title: "Full Name",
+                  title: "Username",
                 ),
                 const SizedBox(height: 16),
                 // NOTE : EMAIL INPUT
                 const CustomFormField(
-                  keyboardType: TextInputType.emailAddress,
-                  title: "Email Address",
+                  keyboardType: TextInputType.name,
+                  title: "Full Name",
                 ),
                 const SizedBox(height: 16),
                 // Note : PASSWORD INPUT
+                const CustomFormField(
+                  title: "Email Address",
+                  keyboardType: TextInputType.emailAddress,
+                ),
+                const SizedBox(height: 16),
                 const CustomFormField(
                   title: "Password",
                   keyboardType: TextInputType.multiline,
@@ -58,21 +52,15 @@ class SignUpPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 30),
                 CustomFilledButton(
-                  title: "Continue",
+                  title: "Update Now",
                   onPressed: () {
-                    context.goNamed(Routes.signUpSetProfilePage);
+                    context.pushReplacementNamed(Routes.profileEditSuccessPage,
+                        extra: false);
                   },
                 )
               ],
             ),
           ),
-          const SizedBox(height: 50),
-          CustomTextButton(
-            title: "Sign In",
-            onPressed: () {
-              context.goNamed(Routes.signInPage);
-            },
-          )
         ],
       ),
     );

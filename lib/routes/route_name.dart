@@ -10,4 +10,8 @@ abstract class Routes {
   static const signUpSuccessPage = 'signUpSuccessPage';
   static const homePage = 'homePage';
   static const profilePage = 'profilePage';
+  static const pinPage = 'pinPage';
+  static const profileEditPage = 'profileEditPage';
+  static const profileEditPinPage = 'profileEditPinPage';
+  static const profileEditSuccessPage = 'profileEditSuccessPage';
 }

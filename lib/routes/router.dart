@@ -1,5 +1,9 @@
 import 'package:bank_sha/ui/pages/home_page.dart';
 import 'package:bank_sha/ui/pages/onboarding_page.dart';
+import 'package:bank_sha/ui/pages/pin_page.dart';
+import 'package:bank_sha/ui/pages/profile_edit_page.dart';
+import 'package:bank_sha/ui/pages/profile_edit_pin_page.dart';
+import 'package:bank_sha/ui/pages/profile_edit_success_page.dart';
 import 'package:bank_sha/ui/pages/profile_page.dart';
 import 'package:bank_sha/ui/pages/sign_in_page.dart';
 import 'package:bank_sha/ui/pages/sign_up_page.dart';
@@ -56,5 +60,25 @@ final router = GoRouter(routes: [
     path: '/profilePage',
     name: Routes.profilePage,
     builder: (context, state) => const ProfilePage(),
+  ),
+  GoRoute(
+    path: '/pinPage',
+    name: Routes.pinPage,
+    builder: (context, state) => const PinPage(),
+  ),
+  GoRoute(
+    path: '/profileEditPage',
+    name: Routes.profileEditPage,
+    builder: (context, state) => const ProfileEditPage(),
+  ),
+  GoRoute(
+    path: '/profileEditPinPage',
+    name: Routes.profileEditPinPage,
+    builder: (context, state) => const ProfileEditPinPage(),
+  ),
+  GoRoute(
+    path: '/profileEditSuccessPage',
+    name: Routes.profileEditSuccessPage,
+    builder: (context, state) => const ProfileEditSuccessPage(),
   ),
 ]);

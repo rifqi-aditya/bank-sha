@@ -1,7 +1,9 @@
+import 'package:bank_sha/routes/router.dart';
 import 'package:bank_sha/shared/theme.dart';
 import 'package:bank_sha/ui/widgets/buttons.dart';
 import 'package:bank_sha/ui/widgets/profile_menu_item.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -65,12 +67,22 @@ class ProfilePage extends StatelessWidget {
                 ProfileMenuItem(
                   iconUrl: "assets/ic_edit_profile.png",
                   title: "Edit Profile",
-                  onTap: () {},
+                  onTap: () async {
+                    final bool? result = await context.push<bool>('/pinPage');
+                    if (result == true) {
+                      context.pushNamed(Routes.profileEditPage);
+                    }
+                  },
                 ),
                 ProfileMenuItem(
                   iconUrl: "assets/ic_pin.png",
                   title: "My PIN",
-                  onTap: () {},
+                  onTap: () async {
+                    final bool? result = await context.push<bool>('/pinPage');
+                    if (result == true) {
+                      context.pushNamed(Routes.profileEditPinPage);
+                    }
+                  },
                 ),
                 ProfileMenuItem(
                   iconUrl: "assets/ic_wallet.png",
