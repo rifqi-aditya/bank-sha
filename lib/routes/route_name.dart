@@ -9,4 +9,5 @@ abstract class Routes {
   static const signUpSetKtpPage = 'signUpSetKtpPage';
   static const signUpSuccessPage = 'signUpSuccessPage';
   static const homePage = 'homePage';
+  static const profilePage = 'profilePage';
 }
