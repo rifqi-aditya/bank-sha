@@ -14,4 +14,10 @@ abstract class Routes {
   static const profileEditPage = 'profileEditPage';
   static const profileEditPinPage = 'profileEditPinPage';
   static const profileEditSuccessPage = 'profileEditSuccessPage';
+  static const topUpPage = 'topUpPage';
+  static const topUpAmountPage = 'topUpAmountPage';
+  static const topUpSuccessPage = 'topUpSuccessPage';
+  static const transferPage = 'transferPage';
+  static const transferAmountPage = 'transferAmountPage';
+  static const transferSuccessPage = 'transferSuccessPage';
 }

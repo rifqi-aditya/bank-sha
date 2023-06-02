@@ -11,6 +11,12 @@ import 'package:bank_sha/ui/pages/sign_up_set_ktp.dart';
 import 'package:bank_sha/ui/pages/sign_up_set_profile_page.dart';
 import 'package:bank_sha/ui/pages/sign_up_success.dart';
 import 'package:bank_sha/ui/pages/splash_page.dart';
+import 'package:bank_sha/ui/pages/topup_amount_page.dart';
+import 'package:bank_sha/ui/pages/topup_page.dart';
+import 'package:bank_sha/ui/pages/topup_success_page.dart';
+import 'package:bank_sha/ui/pages/transfer_amount_page.dart';
+import 'package:bank_sha/ui/pages/transfer_page.dart';
+import 'package:bank_sha/ui/pages/transfer_success_page.dart';
 import 'package:go_router/go_router.dart';
 
 part 'route_name.dart';
@@ -80,5 +86,35 @@ final router = GoRouter(routes: [
     path: '/profileEditSuccessPage',
     name: Routes.profileEditSuccessPage,
     builder: (context, state) => const ProfileEditSuccessPage(),
+  ),
+  GoRoute(
+    path: '/topUpPage',
+    name: Routes.topUpPage,
+    builder: (context, state) => const TopUpPage(),
+  ),
+  GoRoute(
+    path: '/topUpAmountPage',
+    name: Routes.topUpAmountPage,
+    builder: (context, state) => const TopUpAmountPage(),
+  ),
+  GoRoute(
+    path: '/topUpSuccessPage',
+    name: Routes.topUpSuccessPage,
+    builder: (context, state) => const TopUpSuccessPage(),
+  ),
+  GoRoute(
+    path: '/transferPage',
+    name: Routes.transferPage,
+    builder: (context, state) => const TransferPage(),
+  ),
+  GoRoute(
+    path: '/transferAmountPage',
+    name: Routes.transferAmountPage,
+    builder: (context, state) => const TransferAmountPage(),
+  ),
+  GoRoute(
+    path: '/transferSuccessPage',
+    name: Routes.transferSuccessPage,
+    builder: (context, state) => const TransferSuccessPage(),
   ),
 ]);
