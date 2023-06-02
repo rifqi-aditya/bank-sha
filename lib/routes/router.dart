@@ -1,3 +1,6 @@
+import 'package:bank_sha/ui/pages/data_package.page.dart';
+import 'package:bank_sha/ui/pages/data_provider_page.dart';
+import 'package:bank_sha/ui/pages/data_success_page.dart';
 import 'package:bank_sha/ui/pages/home_page.dart';
 import 'package:bank_sha/ui/pages/onboarding_page.dart';
 import 'package:bank_sha/ui/pages/pin_page.dart';
@@ -116,5 +119,20 @@ final router = GoRouter(routes: [
     path: '/transferSuccessPage',
     name: Routes.transferSuccessPage,
     builder: (context, state) => const TransferSuccessPage(),
+  ),
+  GoRoute(
+    path: '/dataProviderPage',
+    name: Routes.dataProviderPage,
+    builder: (context, state) => const DataProviderPage(),
+  ),
+  GoRoute(
+    path: '/dataPackagePage',
+    name: Routes.dataPackagePage,
+    builder: (context, state) => const DataPackagePage(),
+  ),
+  GoRoute(
+    path: '/dataSuccessPage',
+    name: Routes.dataSuccessPage,
+    builder: (context, state) => const DataSuccessPage(),
   ),
 ]);

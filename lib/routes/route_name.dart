@@ -20,4 +20,7 @@ abstract class Routes {
   static const transferPage = 'transferPage';
   static const transferAmountPage = 'transferAmountPage';
   static const transferSuccessPage = 'transferSuccessPage';
+  static const dataProviderPage = 'dataProviderPage';
+  static const dataPackagePage = 'dataPackagePage';
+  static const dataSuccessPage = 'dataSuccessPage';
 }

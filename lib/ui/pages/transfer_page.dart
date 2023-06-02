@@ -25,7 +25,7 @@ class TransferPage extends StatelessWidget {
             style: blackTextStyle.copyWith(fontSize: 16, fontWeight: semiBold),
           ),
           const SizedBox(height: 14),
-          CustomFormField(
+          const CustomFormField(
             title: "by username",
             isShowTitle: false,
           ),
@@ -46,7 +46,7 @@ class TransferPage extends StatelessWidget {
 
   Widget buildRecent() {
     return Container(
-      margin: EdgeInsets.only(top: 40),
+      margin: const EdgeInsets.only(top: 40),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
