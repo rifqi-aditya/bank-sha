@@ -40,6 +40,7 @@ dependencies:
   go_router: ^7.0.1
   url_launcher: ^6.1.11
   intl: ^0.18.1
+  another_flushbar: ^1.12.30
 
 dev_dependencies:
   flutter_test:

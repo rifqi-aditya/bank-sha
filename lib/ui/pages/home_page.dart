@@ -1,4 +1,5 @@
 import 'package:bank_sha/routes/router.dart';
+import 'package:bank_sha/shared/shared_method.dart';
 import 'package:bank_sha/shared/theme.dart';
 import 'package:bank_sha/ui/widgets/home_latest_transaction_item.dart';
 import 'package:bank_sha/ui/widgets/home_services_item.dart';
@@ -183,7 +184,7 @@ class HomePage extends StatelessWidget {
           const SizedBox(height: 21),
           Text("Balace", style: whiteTextStyle),
           Text(
-            "Rp 12.500",
+            formatCurrency(12500),
             style: whiteTextStyle.copyWith(fontSize: 24, fontWeight: semiBold),
           )
         ],
