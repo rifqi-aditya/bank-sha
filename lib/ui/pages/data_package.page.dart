@@ -3,7 +3,6 @@ import 'package:bank_sha/shared/theme.dart';
 import 'package:bank_sha/ui/widgets/buttons.dart';
 import 'package:bank_sha/ui/widgets/forms.dart';
 import 'package:bank_sha/ui/widgets/package_item.dart';
-import 'package:bank_sha/ui/widgets/transfer_result_user_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,7 +13,7 @@ class DataPackagePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Paket Data"),
+        title: const Text("Paket Data"),
       ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24),

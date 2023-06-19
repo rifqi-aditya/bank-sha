@@ -1,6 +1,5 @@
 import 'package:bank_sha/routes/router.dart';
 import 'package:bank_sha/shared/theme.dart';
-import 'package:bank_sha/ui/widgets/bank_item.dart';
 import 'package:bank_sha/ui/widgets/buttons.dart';
 import 'package:bank_sha/ui/widgets/data_provider_item.dart';
 import 'package:flutter/material.dart';
