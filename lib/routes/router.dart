@@ -10,7 +10,6 @@ import 'package:bank_sha/ui/pages/profile_edit_success_page.dart';
 import 'package:bank_sha/ui/pages/profile_page.dart';
 import 'package:bank_sha/ui/pages/sign_in_page.dart';
 import 'package:bank_sha/ui/pages/sign_up_page.dart';
-import 'package:bank_sha/ui/pages/sign_up_set_ktp.dart';
 import 'package:bank_sha/ui/pages/sign_up_success.dart';
 import 'package:bank_sha/ui/pages/splash_page.dart';
 import 'package:bank_sha/ui/pages/topup_amount_page.dart';
@@ -43,11 +42,6 @@ final router = GoRouter(routes: [
     path: '/signUpPage',
     name: Routes.signUpPage,
     builder: (context, state) => const SignUpPage(),
-  ),
-  GoRoute(
-    path: '/signUpSetKtpPage',
-    name: Routes.signUpSetKtpPage,
-    builder: (context, state) => const SignUpSetKtpPage(),
   ),
   GoRoute(
     path: '/signUpSuccessPage',
